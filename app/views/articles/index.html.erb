@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p1 {
+    color: red;
+}
+p2 {
+    font-style: italic;
+    font-size: 44px;
+}
+p3 {
+    font-family: "Lucida Console", monospace;
+}
+p4 {
+    color: blue;
+    font-style: italic;
+}
+h1 {
+    text-align: center;
+    color: MediumSeaGreen;
+}
+table, th, td {
+  border-style: dotted dashed solid double;
+  border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+  border-radius: 12px;
+  padding: 5px;
+  margin: 50px 50px 75px 300px;
+}
+</style>
+</head>
+<body>
+    <a href="https://www.facebook.com/MosestheBubaCat/videos/309483067763499">Moses and a Blowdryer</a>
+<style>
+    body {
+        background-color: grey;
+    }
+</style>
+    <h1>Articles</h1>
+  
+    <table>
+       <tr>
+           <th><p1>title</p1></th>
+           <th><p2>body</p2></th>
+       </tr>
+       <% @articles.each do |article| %>
+           <tr>
+               <td><p3><%= article.title %></p3></td>
+               <td><p4><%= article.body %></p4></td>
+           </tr>
+       <% end %>
+   </table>
+
+</body>
+</html>
+
+
+  
